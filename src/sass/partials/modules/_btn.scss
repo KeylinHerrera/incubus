@@ -1,0 +1,45 @@
+.btn {
+    color: $text-font;
+    cursor: pointer;
+    font-family: $font-family-anchor;
+    text-align: center;
+
+    i {
+        margin-right: 0.4rem;
+    }
+
+}
+
+.btn-tickets {
+    border: 0.1rem solid $white;
+    border-radius: $space-xxx-large;
+    display: block;
+    margin: 0 auto;
+    margin-top: 12%;
+    padding: 2% 0;
+    text-transform: uppercase;
+    width: 30%;
+
+    @include query(1000px){
+        margin-top: 6%;
+        padding: 1% 0;
+        width: 20%;
+    }
+
+    &:hover {
+       background-color: $light-blue;
+       color: $white;
+       transition: background 1s cubic-bezier(.76,.28,.3,.855),color 1s cubic-bezier(.76,.28,.3,.855);
+    }
+}
+
+.btn-contact {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+    text-transform: uppercase;
+
+    &:hover {
+       color: $white;
+    }
+}
